@@ -24,6 +24,12 @@
 
         <script src="config.js"></script>
         <script>
+            function submitForm (e) {
+                e.preventDefault();   //prevents the form from refreshing the page hence submit the form
+
+                const form = new FormData(document.querySelector('#editForm'));
+                form.append('apiKey', apiKey);
+            }
 
         </script>
     </body>
