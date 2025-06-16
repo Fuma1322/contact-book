@@ -104,13 +104,14 @@
                     }
                 })
             }
+            
             function deleteContact() {
                 var confirmDelete = confirm ("Deleting Contact, are you sure?");
 
                 if (confirmDelete == true) {
                     fetch (rootPath + 'controller/delete-contact/?id=' + id)
                     .then(function(response) {
-                        response.text();
+                       return response.text();
                     })
                     .then(function(data) {
                         if (data == "1") {
