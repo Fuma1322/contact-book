@@ -5,8 +5,9 @@
         <title>Contact Book</title>
         <link rel="stylesheet" href="style.css" />
     </head>
-    
+
     <body onload="getContact()">
+        
         <div id="avatarImage"></div>
         <form id="editForm">
             <label for="firstname">First Name</label>
@@ -22,10 +23,14 @@
             </br>
             <button type="submit" id="submitForm" hidden>Submit</button>
         </form>
+
         <br/></br>
-        <button type="button" id="homeLink">Home</button>
-        <button type="button" id="editContact">Edit</button>
-        <button type="button" id="deleteContact">Delete</button>
+
+        <div id="editButtons">
+            <button type="button" id="homeLink">Home</button>
+            <button type="button" id="editContact">Edit</button>
+            <button type="button" id="deleteContact">Delete</button>
+        </div>
 
         <script src="config.js"></script>
         <script>

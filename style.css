@@ -175,3 +175,119 @@ form button[type="submit"]:hover {
     padding: 20px 15px;
   }
 }
+
+/* === Edit Contact Page Styles === */
+
+#avatarImage {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#avatarImage img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#editForm {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#editForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+#editForm input[type="text"],
+#editForm input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+#editForm input[readonly] {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+#editForm input[type="file"] {
+  padding: 8px;
+}
+
+#editForm button[type="submit"] {
+  width: 100%;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#editForm button[type="submit"]:hover {
+  background-color: #357ab8;
+}
+
+#editButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#editButtons button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#editButtons button:hover {
+  background-color: #357ab8;
+}
+
+#editButtons button#deleteContact {
+  background-color: #e94e4e;
+}
+
+#editButtons button#deleteContact:hover {
+  background-color: #c03d3d;
+}
+
+#editButtons button#homeLink {
+  background-color: #080808;
+}
+
+#editButtons button#homeLink:hover {
+  background-color: #666;
+}
+
+@media (max-width: 600px) {
+  #editForm {
+    padding: 20px 15px;
+  }
+
+  #editButtons button {
+    flex: 1 1 100%;
+  }
+}
